@@ -1,0 +1,271 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; 
+	font-family: 'Poppins',sans-serif;
+}
+section{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+}
+section .imgBx{
+	position: relative;
+	width: 50%;
+	height: 100%;
+}
+section .imgBx:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(#00008B,#e91e63,#00008B);
+	z-index: 1;
+	mix-blend-mode: screen;
+}
+section .imgBx img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+section .contentBx{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: 100%;
+}
+section .contentBx .formBx{
+	width: 50%;
+}
+section .contentBx .formBx h2{
+	color: #060D9F;
+	font-weight: 600;
+	font-size: 2.5em;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	border-bottom: 4px solid #060D9F;
+	display: inline-block;
+	letter-spacing: 1px;
+}
+section .contentBx .formBx .inputBx{
+	margin-bottom: 20px;
+}
+section .contentBx .formBx .inputBx span{
+	font-size: 16px;
+	margin-bottom: 5px;
+	display: inline-block;
+	color: #607d8b;
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+section .contentBx .formBx .inputBx input{
+	width: 100%;
+	padding: 10px 20px;
+	outline: none;
+	font-weight: 400;
+	border: 1px solid #607d8b;
+	font-size: 16px;
+	letter-spacing: 1px;
+	color: #607d8b;
+	background: transparent; 
+	border-radius: 30px;
+	border-bottom-width: 2px;
+}
+section .contentBx .formBx .checkBx select{
+	width: 100%;
+	padding: 10px 20px;
+	outline: none;
+	font-weight: 400;
+	border: 1px solid #607d8b;
+	font-size: 16px;
+	letter-spacing: 1px;
+	color: #607d8b;
+	background: transparent; 
+	border-radius: 30px;
+	border-bottom-width: 2px;
+}
+section .contentBx .formBx .checkBx span{
+	font-size: 16px;
+	margin-bottom: 5px;
+	display: inline-block;
+	color: #607d8b;
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+section .contentBx .formBx .inputBx input[type="submit"]{
+	background: #060D9F;
+	color: #fff;
+	outline: none;
+	border: none;
+	font-weight: 500;
+	cursor: pointer;
+}
+section .contentBx .formBx .inputBx input[type="submit"]:hover{
+	background: #f53677;
+}
+section .contentBx .formBx .remember{
+	margin-bottom: 10px;
+	color: #607d8b;
+	font-weight: 400;
+	font-size: 14px;
+}
+@media(max-width:768px){
+	section .imgBx{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+	section .contentBx{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+	}
+	section .contentBx .formBx{
+		width: 100%;
+		padding: 40px;
+		background: rgb(255 255 255 / 0.9);
+		margin: 50px;
+	}
+}
+
+/*Ending of the responsive navigation bar*/
+
+.container{
+	max-width: 700px;
+	width: 100%;
+	background: #fff;
+	padding: 25px 30px;
+	border-radius: 7px;
+}
+.container .title{
+	color: #060D9F;
+	font-weight: 600;
+	font-size: 1.8em;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	border-bottom: 4px solid #060D9F;
+	display: inline-block;
+	letter-spacing: 1px; 
+	width: 100%;
+}
+.container form .user-details{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+form .user-details .inputBx{
+	width: calc(100% / 2 - 30px);
+}
+.user-details .inputBx input{
+	width: 100%;
+	display: block;
+	padding: 8px 20px;
+	outline: none;
+	font-weight: 400;
+	border: 1px solid #607d8b;
+	font-size: 10px;
+	letter-spacing: 1px;
+	color: #607d8b;
+	background: transparent; 
+	border-radius: 30px;
+	border-bottom-width: 2px;
+}
+.user-details2 .checkBx select{
+	width: 100%;
+	height: 34px;
+	padding: 10px 20px;
+	outline: none;
+	font-weight: 400;
+	border: 1px solid #607d8b;
+	font-size: 10px;
+	color: #607d8b;
+	background: transparent; 
+	border-radius: 30px;
+	border-bottom-width: 2px;
+}
+.btnBx input[type="submit"]{
+	width: 100%;
+	padding: 10px 20px;
+	font-size: 10px;
+	letter-spacing: 1px;
+	border-radius: 30px;
+	background: #060D9F;
+	color: #fff;
+	outline: none;
+	border: none;
+	font-weight: 500;
+	cursor: pointer;
+}
+.btnBx input[type="submit"]:hover{
+	background: #f53677;
+}
+
+/* End of the designing for the officers registration page */
+
+.containerOR{
+	max-width: 700px;
+	width: 100%;
+	background: #fff;
+	padding: 25px 30px;
+	border-radius: 7px;
+}
+.containerOR .titleOR{
+	color: #060D9F;
+	font-weight: 600;
+	font-size: 1.8em;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	border-bottom: 4px solid #060D9F;
+	display: inline-block;
+	letter-spacing: 1px; 
+	width: 100%;
+}
+.containerOR form .user-detailsOR{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+form .user-detailsOR .inputBxOR{
+	width: calc(100% / 3 - 30px);
+}
+.user-detailsOR .inputBxOR input{
+	width: 100%;
+	display: block;
+	padding: 8px 20px;
+	outline: none;
+	font-weight: 400;
+	border: 1px solid #607d8b;
+	font-size: 10px;
+	letter-spacing: 1px;
+	color: #607d8b;
+	background: transparent; 
+	border-radius: 30px;
+	border-bottom-width: 2px;
+}
+
+
+
+      
+
+
+
+
+
+
+
